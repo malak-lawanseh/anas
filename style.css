@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: whitesmoke;
+
+}
+.logo{
+    font-size: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+
+    background-color:lightseagreen ;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 50%;
+}
+ul li{
+    list-style-type: none;
+
+}
+ a{
+    text-decoration: none;
+    color: black;
+    font-size: 31px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+
+
+}
+.animation{
+    position: relative;
+    z-index: 1 ;
+    -webkit-mask-image: radial-gradient(black, transparent);
+    
+}
+
+
+.hero{
+    margin-top: 8%;
+    font-size: 31px;
+}
+/* .content div{
+    margin: 250px 20px 20px;
+    font-size: 31px;
+} */
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.btn{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 0px 10px;
+     
+}
+.btn:after,nav ul li a:after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0px;
+    left: 0px;
+    bottom: -10px; 
+}
+.btn:hover:after,nav ul li a:hover:after{
+    transition: .5s;
+    width: 100%;
+}
+#aboutme{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+}
+/* #aboutme div{
+    margin: 250px 20px 20px;
+    font-size: 31px;
+} */
+#aboutme img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+
+}
+#word{
+    margin-top: 4%;
+    font-size: 31px;
+}
+.skillss{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2%;
+}
+.skills{
+    margin-top: 5%;
+    font-size: 31px;
+}
+.project {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2%;
+    flex-direction: column;
+}
+.all_cont_in_proj img{
+
+}
