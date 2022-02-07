@@ -127,8 +127,9 @@ ul li{
     margin-top: 2%;
     flex-direction: column;
 }
-i{
-    font-size: 31px;
+#menu{
+    visibility: hidden;
+    font-size: 34px;
 }
 .meenu{
     display: inline;
@@ -140,14 +141,42 @@ i{
         display: flex;
         flex-direction: column;
     }
+    #menu{
+        visibility: visible;
+        display: inline;
+        z-index: 7;
+    }
+    .list1{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-between;
+    }
+    #aboutme{
+        display: flex;
+        flex-direction: column;
+    }
+    .skillss{
+        display: flex;
+        flex-direction: column;
+    }
+    .all_cont_in_proj{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list{
+        display: none;  
+         content:"";    
+    }
+
 }
 /* <i class="fas fa-bars"></i> */
 #menu_bar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20%;
-    width: 25%;
+    width: 50%;
     height: 100%;
     background-color:lightseagreen ;
     padding-right: 2%;
@@ -155,4 +184,7 @@ i{
     top: 0;
     right: 0;
     visibility: hidden;
+    z-index: 5;
+    justify-content: space-evenly; 
 }
+ 
